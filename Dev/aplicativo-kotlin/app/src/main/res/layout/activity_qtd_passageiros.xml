@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".telas.fiscal.QtdPassageiros">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:clickable="true"
+            android:backgroundTint="@color/azulClaro"
+            app:titleTextColor="@color/corPrimaria"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_voltar"
+            app:title="FECHAR VIAGEM"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TextView
+        android:id="@+id/lbPassageiros"
+        style="@style/TextoBold"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/qtd_titulo"
+        android:textColor="@color/corPrimaria"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/inputQuantidade"
+        style="@style/Input"
+        android:hint="@string/quantidade"
+        android:inputType="number"
+        android:textSize="15sp"
+        />
+
+
+    <Button
+        android:onClick="salvarDados"
+        android:id="@+id/btnFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/salvar_btn" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:outlineSpotShadowColor="@color/azulClaro"
+        android:outlineAmbientShadowColor="@color/azulMedio"
+        android:layout_height="45dp" />
+
+</LinearLayout>

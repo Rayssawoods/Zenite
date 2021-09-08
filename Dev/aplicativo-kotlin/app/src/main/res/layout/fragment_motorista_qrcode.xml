@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telas.fiscal.fragments.dashboard.Linhas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".telas.motorista.fragments.MotoristaQrcode">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azulClaro"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="35dp">
+
+            <TextView
+                android:id="@+id/cronograma"
+                style="@style/TextoBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/qrcode_descricao"
+                android:textColor="@color/corPrimaria" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_error"
+            style="@style/Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:text="@string/mensagem_erro_lista"
+            android:textColor="@color/preto"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:outlineAmbientShadowColor="@color/azulMedio"
+            android:outlineSpotShadowColor="@color/azulClaro"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageee"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

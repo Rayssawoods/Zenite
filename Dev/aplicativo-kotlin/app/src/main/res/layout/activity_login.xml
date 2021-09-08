@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_conteudo"
+    tools:context=".telas.autenticacao.Login">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/azulClaro">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:padding="25dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_logo_zenite" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/bem_vindo" />
+
+    <TextView
+        android:id="@+id/lb_email"
+        style="@style/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/email_titulo"
+        android:textColor="@color/corPrimaria" />
+
+    <EditText
+        android:id="@+id/input_email"
+        style="@style/Input"
+        android:hint="@string/email_titulo"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lb_senha"
+        style="@style/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/senha_titulo"
+        android:textColor="@color/corPrimaria" />
+
+    <EditText
+        android:id="@+id/input_senha"
+        style="@style/Input"
+        android:hint="@string/senha"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="verificarDados"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/esqueceu_senha"
+        style="@style/TextoBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:onClick="irRecuperarSenha"
+        android:text="@string/esqueceu_senha"
+        android:textAlignment="center"
+        android:textColor="@color/gradiente2" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loadinger"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:outlineSpotShadowColor="@color/azulClaro"
+        android:outlineAmbientShadowColor="@color/azulMedio"
+        android:layout_height="45dp" />
+</LinearLayout>
+

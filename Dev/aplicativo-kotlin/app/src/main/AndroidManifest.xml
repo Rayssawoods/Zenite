@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orion.zenite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".utils.Zenite"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.orion.zenite.telas.fiscal.QrcodeScanner" />
+        <activity android:name="com.orion.zenite.telas.fiscal.AlterarIntervalo" />
+        <activity android:name="com.orion.zenite.telas.autenticacao.RecuperarSenha" />
+        <activity android:name="com.orion.zenite.telas.fiscal.LinhaMotorista" />
+        <activity android:name="com.orion.zenite.telas.fiscal.LinhaDetalhes" />
+        <activity android:name="com.orion.zenite.telas.fiscal.LinhaCronograma" />
+        <activity android:name="com.orion.zenite.telas.fiscal.QtdPassageiros" />
+        <activity android:name="com.orion.zenite.telas.motorista.MainMotorista" />
+        <activity android:name="com.orion.zenite.telas.fiscal.MainFiscal" />
+        <activity android:name="com.orion.zenite.telas.autenticacao.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

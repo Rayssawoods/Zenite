@@ -1,0 +1,9 @@
+{
+	"user": "zeniteadmin",
+	"password": "#Gfgrupo7",
+	"server": "zenite.database.windows.net",
+	"database": "bdZenite",
+	"options": {
+		"encrypt": true
+	}
+}

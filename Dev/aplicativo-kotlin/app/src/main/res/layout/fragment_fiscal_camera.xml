@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".telas.fiscal.fragments.FiscalCamera">
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scanner_titulo" />
+
+    <TextView
+        android:id="@+id/descricao"
+        style="@style/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scanner_descricao"
+        android:textColor="@color/preto" />
+
+    <Button
+        android:id="@+id/btn_escanear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/scanner_botao_texto" />
+
+
+</LinearLayout>
